@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Navbar</title>
+  <link rel="stylesheet" href="nav.css" />
+  
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">MySite</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="hamburger">&#9776;</div>
+  </nav>
+
+  <section class="hero">
+    <h1>Welcome to MySite</h1>
+    <p>Your one-stop solution for modern web design.</p>
+    <a href="#" class="btn">Get Started</a>
+  </section>
+
+  <footer>
+    <p>© 2025 MySite. All rights reserved.</p>
+  </footer>
+  <script>
+    document.querySelector('.hamburger').onclick = () =>
+    document.querySelector('.nav-links').classList.toggle('open');
+  
+  </script>
+</body>
+</html>
