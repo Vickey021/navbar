@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Simple Navbar</title>
   <link rel="stylesheet" href="nav.css" />
-  <script defer src="nav.js"></script>
+  
 </head>
 <body>
   <nav class="navbar">
@@ -28,5 +28,10 @@
   <footer>
     <p>© 2025 MySite. All rights reserved.</p>
   </footer>
+  <script>
+    document.querySelector('.hamburger').onclick = () =>
+    document.querySelector('.nav-links').classList.toggle('open');
+  
+  </script>
 </body>
 </html>
